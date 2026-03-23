@@ -1,0 +1,49 @@
+/* Selecciona los elementos de clase "img-small" */
+.img-small { /*  Rem: el tamaño de letra del elemento raíz */
+    max-width: 3rem; /* Establece el ancho máximo en 3 veces el tamaño de la letra del elemento raíz */
+}
+
+/* Selecciona los elementos de clase "img-medium" */
+.img-medium-sm {
+    max-width: 8rem; /* Establece el ancho máximo en 8 veces el tamaño de la letra del elemento raíz */
+}
+
+/* Selecciona los elementos de clase "selected-item" */
+.selected-item {
+    cursor: pointer; /* Cambia la imagen del cursor al dedo apuntando */
+}
+
+/* Selecciona los elementos de clase "img-zoom" */
+.img-zoom {
+  transition: transform .3s ease; /* Añade una transición al zoom de la imagen*/
+}
+
+/* Selecciona los elementos de clase "img-zoom" al pasar el cursor encima */
+.img-zoom:hover {
+  transform: scale(1.1); /* Transforma la escala en un 1.1 */ 
+}
+
+/* Selecciona al elemento de ID (username) */
+#username {
+  font-weight: bold; /* Hace que la letra esté en negrita */
+}
+
+/* Selecciona el documento HMTL */
+html {
+  height: 100%; /* Hace que la altura sea del 100% */
+}
+
+/* Selecciona el body de la página */
+body {
+  min-height: 100%; /* Hace que la altura mínima sea del 100% */
+}
+
+/* Selecciona los elementos de clase "footer-container" */
+.footer-container {
+  flex: 1 0 auto; /* Hace que el container empuje el footer hacia abajo */
+}
+
+/* Selecciona el footer de la página */
+footer {
+  flex-shrink: 0; /* Hace que el footer no se encoja */
+}

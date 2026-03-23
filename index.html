@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Autor de la página -->
+    <meta name="author" content="donovansaez@liceovvh.cl, krishnalopez@liceovvh.cl">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Título de la página -->
+    <title>Templo de los juegos</title>
+</head>
+
+<!-- "bg-dark" hace que el fondo sea negro, "d-flex" hace que los elementos hijos sean flexibles -->
+<!-- "flex-column" hace que los elementos se reordenen en una columna -->
+
+<body class="bg-dark d-flex flex-column">
+    <!-- "bg-primary" cambia el color del fondo a azul, "p-2" añade un padding de 0.5rem -->
+    <header class="bg-primary p-2">
+        <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
+        <!-- "d-flex" hace que los elementos hijos sean flexibles, "justify-content-center" alinea el contenido horizontalmente al centro -->
+        <!-- "align-items-center" alinea los items verticalmente al centro, "col-lg-8" define que el objeto use 8 columnas en pantallas grandes -->
+        <!-- "col-md-6" define que el objeto use 8 columnas en pantallas medianas, "col-md-5" define que el objeto use 5 columnas en pantallas pequeñas -->
+        <!-- "mx-auto" da un margen horizontal automático para centrar el elemento -->
+        <div
+            class="container-fluid d-flex justify-content-between align-items-center col-sm-5 col-md-6 col-lg-8 mx-auto">
+            <!-- (No de Bootstrap) " img-small" hace la imagen pequeña -->
+            <img src="https://cdn-icons-png.flaticon.com/256/5234/5234710.png" alt="Templo" class="img-small">
+            <!-- "text-center" alinea al centro el texto, "text-light" cambia el color del texto a blanco -->
+            <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+            <h1 class="text-center text-light mx-1">Templo de los juegos</h1>
+            <!-- (No de Bootstrap) "img-small" hace la imagen pequeña -->
+            <img src="https://cdn-icons-png.flaticon.com/256/5234/5234710.png" alt="Templo" class="img-small">
+        </div>
+    </header>
+    <!-- "navbar" identifica al elemento como una barra de navegación -->
+    <!-- "navbar-expand-lg" define cuando la barra pasa de botón hamburguesa a diseño completo horizontalmente -->
+    <!-- "bg-info" cambia el color a celeste -->
+    <nav class="navbar navbar-expand-lg bg-info">
+        <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
+        <!-- "col-lg-8" hace que el elemento ocupe 8 columnas en pantallas grandes, "mx-auto" da un margen horizontal automático para centrar el elemento -->
+        <!-- "col-md-6" define que el objeto use 8 columnas en pantallas medianas, "col-md-5" define que el objeto use 5 columnas en pantallas pequeñas -->
+        <div class="container-fluid col-sm-5 col-md-6 col-lg-8 mx-auto">
+            <!-- "navbar-toggler" crea y estiliza el botón de hamburguesa -->
+            <!-- "mx-auto" da un margen horizontal automático para centrar el elemento -->
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- "navbar-toggler-icon" pone el ícono del botón hamburguesa -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- "collapse" oculta el contenido para que solo sea visible pulsando un botón -->
+            <!-- "navbar-collapse" une el sistema de colapso con el estilo visual de la barra de navegación -->
+            <!-- "navbarSupportedContent" ayuda a identificar el contenido que debe mostrar el botón hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- "navbar-nav" define la estructura y espaciado de los enlaces de la barra de navegación -->
+                <!-- "me-auto" añade un margen automático al a derecha -->
+                <!-- "mb-2" añade un margen inferior de 0.5rem, "mb-lg-0" cuando la pantalla es grande el margen inferior será de 0 -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <!-- (No de Bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                    <li class="nav-item selected-item">
+                        <img src="https://play-lh.googleusercontent.com/Jdnw_zqg__whDMACbqzV8Y-iftBh5-euDZtmxtgtfVTz_iBSf177xCbn37sFjdFRXvI=w240-h480-rw"
+                            class="img-small rounded-circle" alt="foto de perfil">
+                        <span id="username"></span>
+                    </li>
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <li class="nav-item">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <!-- <dr> hace que el texto esté en negrita -->
+                        <a class="nav-link active" aria-current="page" href="/index.html">
+                            Ajustes de perfil
+                        </a>
+                    </li>
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <li class="nav-item">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <a class="nav-link" href="#">Configuración</a>
+                    </li>
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <li class="nav-item">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <a class="nav-link" href="#">Preferencias</a>
+                    </li>
+                </ul>
+                <!-- "d-flex" hace los elementos hijos flexibles -->
+                <!-- role="search" determina que el rol de formulario es ser una búsqueda -->
+                <form class="d-flex" role="search">
+                    <!-- "btn" identifica el elemento como un botón, "btn-danger" cambia el color del botón a rojo -->
+                    <button class="btn btn-danger" id="boton-sesion" type="submit" onclick="cerrarSesion()">Cerrar
+                        sesión</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- "navbar" identifica al elemento como una barra de navegación -->
+    <!-- "navbar-expand-lg" define cuando la barra pasa de botón hamburguesa a diseño completo horizontalmente -->
+    <!-- "bg-info" cambia el color a celeste -->
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
+        <!-- "col-lg-8" hace que el elemento ocupe 8 columnas en pantallas grandes, "mx-auto" da un margen horizontal automático para centrar el elemento -->
+        <!-- "col-md-6" define que el objeto use 8 columnas en pantallas medianas, "col-md-5" define que el objeto use 5 columnas en pantallas pequeñas -->
+        <div class="container-fluid col-sm-5 col-md-6 col-lg-8 mx-auto">
+            <!-- "navbar-toggler" crea y estiliza el botón de hamburguesa -->
+            <!-- "mx-auto" da un margen horizontal automático para centrar el elemento -->
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- "navbar-toggler-icon" pone el ícono del botón hamburguesa -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- "collapse" oculta el contenido para que solo sea visible pulsando un botón -->
+            <!-- "navbar-collapse" une el sistema de colapso con el estilo visual de la barra de navegación -->
+            <!-- "navbarSupportedContent1" ayuda a identificar el contenido que debe mostrar el botón hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <!-- "navbar-nav" define la estructura y espaciado de los enlaces de la barra de navegación -->
+                <!-- "me-auto" es un margen que empuja los elementos y crea espacios de forma automática -->
+                <!-- "mb-2" añade un margen inferior de 0.5rem, "mb-lg-0" cuando la pantalla es grande el margen inferior será de 0 -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <li class="nav-item">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <!-- <dr> hace que el texto esté en negrita -->
+                        <a class="nav-link active" aria-current="page" href="/index.html">
+                            <strong>Inicio</strong>
+                        </a>
+                    </li>
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <li class="nav-item">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <a class="nav-link" href="#">Top jugados</a>
+                    </li>
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <!-- "dropdown" se encarga de crear un menú despegable -->
+                    <li class="nav-item dropdown">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <!-- "dropdown-toggle" convierte el elemento en el ejecutador del menú desplegable -->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorías
+                        </a>
+                        <!-- "dropdown-menu" guarda la lista de items del menú desplegable -->
+                        <ul class="dropdown-menu">
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Deportes</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Football</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Combate</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Multijugador</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">RPG</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Simulador</a></li>
+                            <li>
+                                <!-- "dropdown-divider" añade una línea divisora -->
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Ver más...</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- "d-flex" hace los elementos hijos flexibles -->
+                <!-- role="search" determina que el rol de formulario es ser una búsqueda -->
+                <form class="d-flex" role="search">
+                    <!-- "form-control" da estilo a los input de form -->
+                    <input class="form-control me-2" type="search" placeholder="Buscar juego..." aria-label="Search">
+                    <!-- "btn" identifica el elemento como un botón, "btn-success" cambia el color del botón a verde -->
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
+    <!-- "col-lg-8" hace que ocupe 8 columnas en pantallas grandes -->
+    <!-- "col-md-6" define que el objeto use 8 columnas en pantallas medianas, "col-md-5" define que el objeto use 5 columnas en pantallas pequeñas -->
+    <!-- "mx-0" hace que el margin horizontal sea 0, se usa main porque es el contenedor principal de la página  -->
+    <main class="container-fluid col-sm-5 col-md-6 col-lg-8 mx-auto">
+        <!-- "row" establece el elemento como una fila -->
+        <div class="row">
+            <!-- "text-center" alinea al centro el texto, "text-light" cambia el color del texto a blanco -->
+            <!-- "my-2" añade un margen vertical de 0.5rem -->
+            <h2 class="text-light text-center my-2">Recomendaciones principales</h2>
+        </div>
+        <!-- "d-flex" hace que los elementos hijos sean flexibles, "justify-content-center" alinea el contenido horizontalmente al centro -->
+        <!-- "col-lg-8" define que el objeto use 8 columnas en pantallas grandes, "mx-auto" da un margen horizontal automático para centrar el elemento -->
+        <!-- "col-md-6" define que el objeto use 8 columnas en pantallas medianas, "col-md-5" define que el objeto use 5 columnas en pantallas pequeñas -->
+        <!-- "row" establece el elemento como una fila -->
+        <div class="row d-flex justify-content-center col-sm-5 col-md-6 col-lg-8 mx-auto">
+            <!-- "carousel" detecta al elemento como un carrusel, "slide" hace que el carrusel sea deslizable -->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <!-- "carousel-inner" detecta que es el elemento base para las imagenes -->
+                <div class="carousel-inner">
+                    <!-- "carousel-item" detecta que el elemento es un objeto del carrusel -->
+                    <!-- "active" indica cual imagen se está mostrando -->
+                    <div class="carousel-item active">
+                        <!-- "d-block" hace que la imagen se muestra en bloque, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (No de Bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <img src="./static/images/candycharming.png" class="d-block img-fluid selected-item"
+                            alt="Candy Charming">
+                    </div>
+                    <!-- "carousel-item" detecta que el elemento es un objeto del carrusel -->
+                    <!-- "active" indica cual imagen se está mostrando -->
+                    <div class="carousel-item">
+                        <!-- "d-block" hace que la imagen se muestra en bloque, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (No de Bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <img src="./static/images/gtadragonball.png" class="d-block img-fluid selected-item"
+                            alt="Grand Theft Auto San Andreas: Dragon Ball Edition">
+                    </div>
+                    <!-- "carousel-item" detecta que el elemento es un objeto del carrusel -->
+                    <!-- "active" indica cual imagen se está mostrando -->
+                    <div class="carousel-item">
+                        <!-- "d-block" hace que la imagen se muestra en bloque, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (No de Bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <img src="./static/images/meancraftgame.png" class="d-block img-fluid selected-item"
+                            alt="Mean Craft">
+                    </div>
+                    <!-- "carousel-item" detecta que el elemento es un objeto del carrusel -->
+                    <!-- "active" indica cual imagen se está mostrando -->
+                    <div class="carousel-item">
+                        <!-- "d-block" hace que la imagen se muestra en bloque, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (No de Bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <img src="./static/images/pvzgame.png" class="d-block img-fluid selected-item"
+                            alt="Plants vs. Zombies: Clones">
+                    </div>
+                </div>
+                <!-- "carousel-control-prev" detecta que el botón es uno de control del carrusel para retroceder -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <!-- "carousel-control-prev-icon" añade el icono del botón "<" -->
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <!-- "carousel-control-next" detecta que el botón es uno de control del carrusel para avanzar -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <!-- "carousel-control-next-icon" añade el icono del botón ">" -->
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- "bg-info" cambia el color del fondo a celeste, "p-2" añade un padding de 0.5rem -->
+        <!-- "mx-auto" establece un margin horizontal automático para centrar los objetos -->
+        <!-- "Rounded" redondea los bordes del elemento, "mt-4" establece un margen arriba de 1.5rem -->
+        <div class="bg-info p-2 mx-auto mt-4 rounded">
+            <section>
+                <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                <h3 class="mx-1">Explorar</h3>
+                <!-- "d-flex" hace que los elementos hijos sean flexibles, "bg-primary" cambia el color del fondo a azul -->
+                <!-- "rounded" redondea los bordes, "overflow-auto" añade una barra de scroll automáticamente -->
+                <!-- "overflow-y-hidden" esconde la barra de scroll vertical, "py-2" añade un padding vertical de 0.5rem -->
+                <div class="d-flex bg-primary rounded overflow-auto overflow-y-hidden py-2">
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/CcVFSy6zyPIlSmbAZdA3zabZleV3x3xXf_pPFxL6U7enlYt25cqNfCNySKRN4ZXWg_A=w240-h480-rw"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Bounce Ball Game">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/I7CQ7JWKDgh5bNebcSJmVIYsrfvTxDMk_HXR7yBtcTGFOv6ubA2SJk4dwOlb27Y8IjE"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Subway Surfers">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/s4Xhc-H47izjjKfjDjgXsVC0WKwDyYvUetTodU4JoAYbUs7C0WjXwmuQXFGCvENjitdZN030mTld1G9-HFW14w"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Snake Game">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/SdqeAcUfepR18VPicCxtr7M2J7CJ1pAQ3UvpxkA0zcC6NTaS5-rrLUI1-zK0eaSO4O0NXj4mJLW6kRZVBsl9qQ"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Apilar ladrillos">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFTQtat5qrsnJi5DtZQbMlI5eAOhsjule1w&s"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Stellar Wind">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/xToRFw-mqA18HtizgutV0K1IouakfR8iJ3PW75u-1n1oxbP7hVfBMlgHWIwuUYKKS_s"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Pou">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/qVZjQkmNzzuigMu7vbglU_Ql08Y9Tq3bCmaf-esVasmm_IXhrYKuoeIT3s7VGru1xto"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Doctor Kids">
+                    </div>
+                </div>
+                <!-- "mx-1" añade un margen horizontal de 0.25rem, "mt-2" añade un margen arriba de 0.5rem -->
+                <h3 class="mx-1 mt-2">Más jugados</h3>
+                <!-- "d-flex" hace que los elementos hijos sean flexibles, "bg-primary" cambia el color del fondo a azul -->
+                <!-- "rounded" redondea los bordes, "overflow-auto" añade una barra de scroll automáticamente -->
+                <!-- "overflow-y-hidden" esconde la barra de scroll vertical, "py-2" añade un padding vertical de 0.5rem -->
+                <div class="d-flex bg-primary rounded overflow-auto overflow-y-hidden py-2">
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://img.utdstc.com/icon/5dd/511/5dd51128335d76cc5eafb6d211646e7c786d23111b8d64fe750c85939b806ca5:200"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Valorant">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://i.pinimg.com/474x/55/d4/94/55d494fc87a004fa430ebcc83818e767.jpg"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Minecraft">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hybZiz5pJf65XulQFjzBM-JrDr5zeYYzfQ&s"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Free Fire">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-d72y_9THXwgTpw488ok5N7j151bSeDVSQ&s"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Aplasta Hormigas">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/TfDav6Pkn71ylv5NR0lo_uozME3YNTdAeVS2bC8pRz1pkJyMgtb8b7k36VTTO8JQdNUIrD2yHaxftXQ6SW-L"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom"
+                            alt="Looney Tunes World of Mayhem">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/qLgeusnY6S6JC_qB7s1qz5rPzrzMIuiXDvQN2R9qZhuQb3xTw4adMD0-Ktk12LrLwFB_wn_ftNVvLDsixSBeGQ"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Plague Inc.">
+                    </div>
+                    <!-- "mx-1" añade un margen horizontal de 0.25rem -->
+                    <div class="mx-1">
+                        <!-- (no de bootstrap) "img-medium-sm" establece el tamaño mediano pequeño -->
+                        <!-- "rounded" redondea los bordes, "img-fluid" hace que las imagenes sean responsivas con su tamaño acorde al contenedor padre -->
+                        <!-- (no de bootstrap) "selected-item" detecta cuando el cursor está encima del objeto -->
+                        <!-- (no de bootstrap) "img-zoom" detecta cuando debe hacer zoom la imagen -->
+                        <img src="https://play-lh.googleusercontent.com/9oKsgghjeohO1ztpmG6SrIMAVLn8sAhwsRGKHuOaqfMghYWiFHJ1osjwf_fAaMQZA5Y"
+                            class="img-medium-sm rounded selected-item img-fluid img-zoom" alt="Solar Smash">
+                    </div>
+                </div>
+            </section>
+            <!-- "d-flex" hace que los elementos hijos sean flexibles, "justify-content-center" alinea el contenido horizontalmente al centro -->
+            <div class="d-flex justify-content-center">
+                <!-- "btn" detecta el elemento como un botón, "btn-lg" lo hace un botón grande -->
+                <!-- "bg-primary" cambia el color del fondo a azul, "mt-4" añade un margen arriba de 1.5rem -->
+                <!-- "text-lignt" cambia el botón del texto a blanco -->
+                <button class="btn btn-lg bg-primary mt-4 text-light" type="button">Ver más</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- "bg-secondary" cambia el color del fondo a gris, "mt-5" añade un margen arriba de 3rem -->
+    <footer class="bg-secondary mt-5">
+        <!-- (No de Bootstrap) "footer-container" detecta el elemento como el contenedor del footer -->
+        <!-- "mt-3" añade un margen arriba de 1rem, "col-lg-8" define que el objeto use 8 columnas en pantallas grandes -->
+        <!-- "col-md-6" define que el objeto use 8 columnas en pantallas medianas, "col-md-5" define que el objeto use 5 columnas en pantallas pequeñas -->
+        <!-- "px-3" añade un padding horizontal de 1rem -->
+        <div class="footer-container mt-3 col-sm-5 col-md-6 col-lg-8 mx-auto px-3">
+            <div class="d-flex justify-content-between">
+                <!-- "text-center" alinea el texto al centro, "text-light" cambia el color del texto a blanco -->
+                <p class="text-center text-light">©2026 by Dono & Krishna Games Inc. Todos los derechos
+                    reservados, al iniciar sesión, usted acepta automáticamente los términos y condiciones, y
+                    nuestra política de privacidad.</p>
+            </div>
+            <!-- "row" establece el elemento como una fila, "justify-content-between" alinea horizontalmente los elementos con espacios intermedios -->
+            <div class="d-flex justify-content-between">
+                <!-- "link-opacity-75" cambia la opacidad del link a 75% -->
+                <!-- "link-opacity-100-hover" cambia la opacidad del link a 100% al pasar el cursor encima -->
+                <!-- "link-light" cambia el color del link a blanco -->
+                <a href="#" class="link-opacity-75 link-opacity-100-hover link-light">Términos y condiciones</a>
+                <!-- "link-opacity-75" cambia la opacidad del link a 75% -->
+                <!-- "link-opacity-100-hover" cambia la opacidad del link a 100% al pasar el cursor encima -->
+                <!-- "link-light" cambia el color del link a blanco -->
+                <a href="#" class="link-opacity-75 link-opacity-100-hover link-light">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Enlace a JS local -->
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>
